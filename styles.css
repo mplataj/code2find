@@ -1,0 +1,407 @@
+@charset "utf-8";
+@import url("webfonts/Galaxus_z8Mow/stylesheet.css");
+@import url("webfonts/NeonLights_22d/stylesheet.css");
+ @import url("https://use.typekit.net/sbs4kkt.css");
+
+
+/* CSS Document */
+
+body {
+	margin: 0px auto;
+	padding: 0px;
+	background-color:black;
+	color: antiquewhite;
+	font-family: 'code-saver', Arial;
+	width: 100%;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+/*** NAVIGATION *************/
+
+nav {
+    text-align: center;
+    vertical-align: middle;
+    background: black;
+    border: 0px;
+    margin: 0px;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    font-size: 14pt;
+    text-transform: none;
+    letter-spacing: 2pt;
+	font-family: "code-saver", Arial;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+
+nav a {
+	color: gold;
+	text-decoration: none;
+	max-width: 1200px;
+	min-width: 300px;
+	width: 800px;
+	flex: 1 1 auto;
+	margin: 0px;
+}
+
+nav a:hover {
+	color:white;
+}
+
+.nav-logo {
+	
+	font-size: 22px;
+	text-transform: uppercase
+}
+
+
+/**** MAIN **************/
+
+main {
+	width: 100%;
+	margin: 20px auto;
+	background-color: none;
+
+}
+
+/**** INDEX PAGE ****/
+
+#index-body div {
+	display: inline-block;
+}
+.yellow-brick {
+	background-color: none;
+	color: antiquewhite;
+	max-width: 300px;
+	border: 2px solid gold;
+	text-align: left;
+	margin: 10px auto;
+	padding: 20px;
+}
+
+.yellow-brick a {
+	color: white;
+}
+
+.yellow-brick a:hover {
+	text-transform: uppercase;
+}
+
+
+/**** ABOUT PAGE ****/
+
+#licks-pics-div {
+	background-color: pink;
+	padding: 10px;
+	color: black;
+	font-size: 18px;
+}
+
+#licks-pics-div img {
+	padding: 0px;
+	border: 6px solid;
+	margin: 10px;
+}
+
+#about-expo {
+	font-size: 22px;
+	width: 150px;
+	margin: 0px auto 20px auto;
+}
+
+#licks-title {
+	font-family: 'NeonLights 22d'e2wg"";
+	font-size: 55px;
+	color: hotpink;
+}
+
+
+/**** CHILL ZONE PAGE ****/
+
+#chill-body {
+    background-color: antiquewhite;
+	background-image: url("images/snowflakes-bg.jpg");
+    background-size: cover;
+	background-position: center;
+    background-repeat: repeat-y;
+	background-attachment: fixed;
+	width: 100%;
+	color: black;
+}
+
+#chill-body main {
+    max-width: 700px;
+    background-color: rgba(7,54,74,0.30);
+    border-radius: 50px;
+	margin: 30px auto;
+	padding: 20px 20px 40px 20px;
+	color: black;
+   	font-family: "brioso pro";
+}
+
+#chill-body p{
+	font-size: 16px;
+	text-align: left;
+	font-weight: bolder;
+}
+
+
+#chill-title {
+	font-family:"antiquarian-scribe";
+	font-size: 95px;
+	color: white;
+}
+
+#ww-audio-div {
+	border: 5px dotted white;
+	background-color:rgba(255,255,255,0.30);
+	padding: 15px;
+	width: 330px;
+	height: 100px;
+	margin: 0px auto;
+}
+#ww-audio-div p {
+	text-align: center;
+	font-size: 18px;
+}
+
+#ww-audio-div audio {
+	border: none;
+}
+
+#santacam-text-div {
+	margin: 30px auto;
+	width: 420px;
+}
+#santacam-text-div p {
+	color: black;
+	font-family: 'brioso pro';
+	margin: 0px auto 20px auto;
+	font-size: 18px;
+}
+
+#santacam-title {
+	font-family:"antiquarian-scribe";
+	font-size: 55px;
+	color:rgba(225,13,13,1.00);
+	margin: 0px auto;
+}
+
+#santacam-iframe {
+	border: 5px dotted red;
+}
+
+
+/**** CONSTITUTION PAGE ****/
+
+#constitution-body {
+    background-color: antiquewhite;
+	background-image: url("images/parchment-900x1093.jpg");
+    background-size: contain;
+    background-repeat: repeat-y;
+	width: 100%;
+	color: black;
+}
+
+#constitution-body main {
+    color: black;
+   	font-family: "brioso pro", "poetica";
+    font-style: italic;
+}
+
+#constitution-body p{
+	font-size: 16px;
+	text-align: left;
+	font-weight: bolder;
+}
+
+.constitution-title {
+	font-family:"antiquarian-scribe";
+	font-size: 65px;
+}
+
+/** articles **/
+#constitution-body h2{
+	font-family:"antiquarian-scribe";
+	font-size: 40px;
+	margin: 20px auto 0px auto;
+}
+
+/** sections **/
+#constitution-body h4{
+	font-family:"antiquarian-scribe";
+	font-size: 28px;
+	margin: 20px auto 0px auto;
+}
+
+/** return to top text **/
+#constitution-body h3{
+	font-family:"brioso pro";
+	text-align: left;
+	font-size: 18px;
+}
+
+#constitution-main-div {
+	max-width: 800px;
+	min-width: 150px;
+	margin: 0px auto;
+	padding: 0px 50px;
+}
+
+#constitution-list-div {
+	max-width: 800px;
+	margin: 20px auto;
+	font-size: 18px;
+}
+
+#constitution-list-div ul{
+	width: 120px;
+	margin: 10px;
+	display: inline-block;
+}
+
+/**** CONTACT PAGE ****/
+
+#contact-body {
+	font-family: 'code-saver';
+}
+
+#contact-body main {
+	max-width: 540px;
+}
+
+#contact-title {
+	font-family: 'shlop';
+	font-size: 75px;
+	color: red;
+}
+
+fieldset {
+	border: none;
+}
+
+.button {
+	background-color: aqua;
+	font-family: "poetica";
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+
+/**** LUNA NEW YEAR PAGE ****/
+
+#luna-body main {
+	margin: 0px auto;
+	font-family: 'Lucida Handwriting';
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#luna-pic-div {
+	margin: 20px auto;
+	border: 110px dotted darkslateblue;
+	padding: 10px;
+	width: 400px;
+	background-color: none;
+	color: rgba(69,144,172,1.00);
+}
+
+#luna-pic-div img {
+	border: 4px solid rgba(69,144,172,1.00);
+	padding: 18px;
+}
+
+#luna-video-div {
+	margin: 20px auto;
+	border: 40px double indigo;
+	padding: 20px;
+	width: 400px;
+	background-color: darkslateblue;
+	color:rgba(240,228,216,1.00);
+}
+
+#luna-video-div video {
+	border: 4px solid white;
+}
+
+
+/**** RAINBOW WEBPAGE *****/
+
+#richest-body {
+    background-color: slategray;
+    color: black;
+    font-family: Elephant;
+}
+
+#richest-body header{
+    text-align: center;
+    color: black;
+    font-family: Elephant;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 30px;
+    font-variant: small-caps;
+}
+
+#richest-table {
+    width: 600px;
+    font-size: 20px;
+    margin: auto;
+    border: 15px solid white;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px -20px 50px 70px rgba(255,255,255,1.0);
+}
+
+thead {
+	text-align: left;
+}
+
+tr {
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+td {
+	padding:15px;
+	margin: 0px;
+	font-family: 'Adore You', 'Lucida Handwriting'
+}
+
+#goldpot-audio-div {
+	background-image: url("images/richest/pot-of-gold.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 450px;
+	margin: 0px auto;
+}
+
+#goldpot-audio-div audio{
+	margin: 200px auto;
+}
+
+
+/*** FOOTER *************/
+
+footer {
+	clear: both;
+	vertical-align: bottom;
+    margin: 30px auto;
+	padding: 20px;
+	height: 60px;
+}
+
+footer p {
+	clear: both;
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: center;
+	vertical-align: bottom;
+}
