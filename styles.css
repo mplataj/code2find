@@ -116,7 +116,7 @@ main {
 }
 
 #licks-title {
-	font-family: 'NeonLights 22d'e2wg"";
+	font-family: code-saver;
 	font-size: 55px;
 	color: hotpink;
 }
@@ -286,12 +286,49 @@ fieldset {
 	border: none;
 }
 
-.button {
-	background-color: aqua;
-	font-family: "poetica";
-	font-size: 18px;
-	font-weight: bold;
+#checkboxes-div {
+	text-align: left;
+	margin: 0px auto;
+	max-width: 400px;
+}
+
+.checkbox-label input {
+	margin: 10px;
+}
+
+#contact-body div{
+	margin: 0px auto;
+	text-align: center;
+}
+
+.submit-button a{
+	background-color: grey;
+	max-width: 90px;
+	max-height: 30px;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 4px outset;
+	border-color:dimgray;
+	border-radius: 0px;
 	
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	font-family: brioso-pro-bold;
+	font-size: 18px;
+	font-style: bolder;
+	letter-spacing: 2px;
+}
+
+.submit-button a:hover {
+	background-color: black;
+	color: lightgrey;
+	text-decoration: none;
+	font-style: bolder;
+	box-shadow: 0px 0px 20px 5px ghostwhite;
+	text-shadow: 0px 0px 5px white;
+
 }
 
 /**** LUNA NEW YEAR PAGE ****/
@@ -387,8 +424,22 @@ td {
 	margin: 200px auto;
 }
 
+/**** 404 PAGE ************/
 
-/*** FOOTER *************/
+.home-link {
+	text-decoration: none;
+	color: crimson;
+	font-size: 22px;
+	font-style: italic;
+}
+
+.home-link:hover {
+	text-decoration: underline;
+	color: pink;
+}
+
+
+/**** FOOTER *************/
 
 footer {
 	clear: both;
