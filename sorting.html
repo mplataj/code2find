@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en"><!-- InstanceBegin template="/Templates/template-main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- InstanceBeginEditable name="doctitle" -->
+	
+<!-- REFERENCES: 
+https://www.w3schools.com/howto/howto_js_sort_table.asp
+
+https://gridjs.io/docs/examples/multi-sort
+------->
+<title>Sorting it Out</title>
+	
+<style>
+table {
+  border-spacing: 0;
+  width: 60%;
+  margin: 0 auto;
+}
+	
+th {
+  text-align: center;
+  background-color: dimgrey;
+  border: thin solid black;
+  height: 50%;
+	}
+
+td {
+  text-align: left;
+  padding: 1px;
+  height: 13%;
+  border-right: thin solid white;
+  border-left: thin solid white;
+  width: 30%;
+
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  color: black;
+}
+	
+img {
+	width: 30%;
+	margin: 10% auto 0 auto;
+	}
+	
+img:hover {
+  	animation: shake 0.3s;
+  	animation-iteration-count: 3;
+
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+
+  20% { transform: translate(-3px, 0px) rotate(2deg); }
+
+  40% { transform: translate(1px, -1px) rotate(2deg); }
+
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+
+  80% { transform: translate(-1px, -1px) rotate(2deg); }
+	
+  100% { transform: translate(1px, 2px) rotate(0deg); }
+}
+</style>
+
+<!-- InstanceEndEditable -->
+
+<meta name="author" content="WTAMU student">
+<meta name="description" content="coding blog">
+<meta name="keywords" content="HTML, CSS, javascript, coding, web design">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+
+<!-- InstanceEndEditable -->
+</head>
+
+<!-- InstanceBeginEditable name="body-tag" -->
+<body>
+<!-- InstanceEndEditable -->
+	<nav>
+		<a href="about.html" title="About">[about]</a>
+		
+		<a class ="nav-logo" href="index.html" title="Index">code to find out</a>
+
+		<a href="contact.html" title="Contact">[contact]</a>
+	</nav>
+	
+	<main>
+<!-- InstanceBeginEditable name="main" -->
+		
+<header><h1>Sorting It Out</h1></header>
+
+<table id="myTable">
+  <tr>
+	  
+	<th><p><button onclick="sortTable1()">Lost</button></p></th>
+	  
+    <th><p><button onclick="sortTable2()">Found</button></p></th>
+	  
+  </tr>
+	
+  <tr>
+    <td>In</td>
+    <td>4 France</td>
+  </tr>
+  <tr>
+    <td>Not</td>
+	<td>3 India</td>
+  </tr>
+  <tr>
+	<td>Anymore</td>
+    <td>6 Italy</td>
+  </tr>
+  <tr>
+    <td>We</td>
+    <td>1 Texas</td>
+  </tr>
+  <tr>
+	<td>Kansas</td>
+    <td>5 Mexico</td>
+  </tr>
+  <tr>
+     <td>Are</td>
+	 <td>2 UK</td>
+  </tr>
+  <tr>
+	<td>Toto</td>
+	<td>7 Mars</td>
+  </tr>
+</table>
+		
+	<a href="index.html"><img src="images/ruby-slippers-trans2.png"></a>
+		
+<script>
+function sortTable1() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+	
+function sortTable2() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[1];
+      y = rows[i + 1].getElementsByTagName("TD")[1];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+
+		
+<!-- InstanceEndEditable -->
+	</main>
+	<br>
+	<footer align="center">
+  		Follow the Yellow Brick Code &copy; 2024
+	</footer>	
+
+</body>
+<!-- InstanceEnd --></html>
